@@ -1,13 +1,14 @@
 <!DOCTYPE HTML>
     <html>
         <head>
-            <meta charset="UTF-8"/>:
+            <meta charset="UTF-8"/>
             <title> Formulaire </title>
         </head>
 
         <body>
 
 <p>Bonjour Taureau</p>
+
 
 
     </body>

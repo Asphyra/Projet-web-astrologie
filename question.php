@@ -18,21 +18,99 @@
 	$jour=date('z',strtotime($date));
 	$mois = date('m', strtotime($date));
 
-
-echo "Vous êtes né(e) le ", date('j', strtotime($date)),"\n", $liste[(int)$mois-1]," !";
+echo "Bonjour $prenom $nom </br>";
+echo "Vous êtes né(e) le ", date('j', strtotime($date)),"\n", $liste[(int)$mois-1]," !</br>";
 echo "\n ";
-echo"$prenom";
-  
-	echo "bonjour $prenom $nom </br>";
-    echo "Vous êtes né le $date à $ville</br>";
+
+
+    echo "$ville a vu naître une nouvelle star ce jour là !";
 
 	/*Jour par rapport au 1er janvier */
+
+
+	if (isset($jour)==1  and $jour >= 355 )
+	{
+	$signe = "Capricorne";
+
+	}
 	
-	echo"$jour";
+	else if (isset($jour)==1  and $jour >= 326 )
+	{
+	$signe = "Sagittaire";
+
+	}
 	
+	else if (isset($jour)==1  and $jour >= 295 )
+	{
+	$signe = "Scorpion";
+
+	}
+	
+	else if (isset($jour)==1  and $jour >= 265 )
+	{
+	$signe = "Balance";
+
+	}
+	
+	else if (isset($jour)==1  and $jour >= 234 )
+	{
+	$signe = "Vierge";
+
+	}
+	
+	else if (isset($jour)==1  and $jour >= 203 )
+	{
+	$signe = "Lion";
+
+	}
+	
+	else if (isset($jour)==1  and $jour >= 172 )
+	{
+	$signe = "Cancer";
+
+	}
+	
+	else if (isset($jour)==1  and $jour >= 141 )
+	{
+	$signe = "Gémeau";
+
+	}
+	
+	else if (isset($jour)==1  and $jour >= 110 )
+	{
+	$signe = "Taureau";
+
+	}
+	
+	else if (isset($jour)==1  and $jour >= 79 )
+	{
+	$signe = "Bélier";
+
+	}
+	
+	else if (isset($jour)==1  and $jour >= 50 )
+	{
+	$signe = "Poission";
+
+	}
+	
+	else if (isset($jour)==1  and $jour >= 20 )
+	{
+	$signe = "Verseau";
+
+	}
+	
+	else if (isset($jour)==1  and $jour >= 0 )
+	{
+	$signe = "Capricorne";
+
+	}
+
+	echo"</br>$signe";
 ?>
 	<section>
 		<article>
+<p> Veuillez répondre à la question suivante afin d'accéder à votre Horoscope : </p>
 <p><a>Quelle est la couleur du cheval blanc d'Henry VI?</a></p>
 <form method="post" action="affichage.php"
 <div>
@@ -45,6 +123,7 @@ echo"$prenom";
 <?php echo "$prenom"?>"/>
 
 <div>
+</br>
 <input type="submit" name="OK"
 </div>
 </form>
@@ -52,3 +131,7 @@ echo"$prenom";
 </section>
 </body>
 </html>
+<?php
+
+
+?>

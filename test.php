@@ -1,49 +1,3 @@
-
-<?php
-$mdp = $_POST['mdp'];
-define ("mdp","blanc" or "Blanc");
-$date = $_POST['date'];
-$jour=date('z',strtotime($date));
-$prenom = $_POST["prenom"];
-
-
-
-?>
-
-
-
-
-<!DOCTYPE HTML>
-    <html>
-        <head>
-            <meta charset="UTF-8"/>
-            <title> Formulaire </title>
-        </head>
-
-        <body>
-
-<p>Bonjour Verseau</p>
-<form method="post" action="affichage.php"
-
-<div>
-<input type="hidden" id="postId" name="date" value="
-<?php echo "$date"?>"/>
-<input type="hidden" id="postId" name="prenom" value="
-<?php echo "$prenom"?>"/>
-
-<div>
-</br>
-<input type="submit">
-</div>
-
-
-<?php
-
-
-
-
-
-
 if (isset($jour)==1 and $mdp==mdp and $jour >= 355 )
 {
 echo"Capricorne";
@@ -121,14 +75,3 @@ else if (isset($jour)==1 and $mdp==mdp and $jour >= 0 )
 echo"Capricorne";
 exit();
 }
-
-?>
-
-
-    </body>
-</html>
-
-
-
-
-

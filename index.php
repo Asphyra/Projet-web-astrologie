@@ -1,29 +1,30 @@
 <!DOCTYPE HTML>
     <html>
         <head>
-            <meta charset="UTF-8"/>:
+            <meta charset="UTF-8"/>
             <title> Formulaire </title>
         </head>
 
         <body>
-            <p>Formulaire</p>
+            <h1> Formulaire : </h1>
 	        <form method="post" action="question.php">
-                <p>Nom: </p>
+                <h2>Nom : </h2>
                 <input type="texte" name="nom">
             </div>
             <div>
-                <p>Prénom:</p>
+            <h2>Prénom : </h2>
                 <input type="texte" name="prenom">
          
             </div>
             <div>
-                <p>Date de Naissance:</p>
+            <h2>Date de Naissance : </h2>
                 <input type="date" name="date">
             </div>
             <div>
-                <p>Ville de naissance:</p>
+            <h2>Ville de Naissance : </h2>
                 <input type="texte" name="ville">
             </div>
+</br>
             <div>
                 <input type="submit" name="OK">
             </div>
