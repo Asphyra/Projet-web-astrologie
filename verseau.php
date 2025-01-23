@@ -2,7 +2,9 @@
 $prenom = $_POST["prenom"];
 $date = $_POST["date"];
 $nom = $_POST["nom"];
-
+$liste = array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre","Octobre", "Novembre", "Décembre");
+$mois = date('m', strtotime($date));
+$ville = $_POST["ville"];
 ?>
 
 
@@ -18,8 +20,12 @@ $nom = $_POST["nom"];
         <body id="Verseau">
         <h1>VERSEAU</h1>
 
-        <p>Bonjour <?php echo"$prenom";?></br>
-        Vous êtes né(e) le <?php echo"$date";?>, le même jour que :</p>
+        <p>Citation : “La nature humaine n'est ni bonne ni mauvaise, </br>
+        mais ouverte vers une continuelle transformation et transcendance. 
+</br> Elle n'a qu'une chose à faire, se découvrir elle-même.” </p>
+
+        <p>Bonjour <?php echo"$prenom";?> ,</br>
+        Vous êtes né(e) le <?php echo date('j', strtotime($date)),"\n",$liste[(int)$mois-1] ?> à <?php echo"$ville" ?>, </br> vous êtes donc du même signe que :</p>
         <div class="flex">
 
             <div class='duo'>

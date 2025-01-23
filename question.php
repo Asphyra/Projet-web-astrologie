@@ -131,6 +131,8 @@ Vous êtes né(e) le <?php echo date('j', strtotime($date)),"\n",$liste[(int)$mo
 <?php echo "$prenom"?>"/>
 <input type="hidden" id="postId" name="nom" value="
 <?php echo "$nom"?>"/>
+<input type="hidden" id="postId" name="ville" value="
+<?php echo "$ville"?>"/>
 </div>
 </form>
 </article>
