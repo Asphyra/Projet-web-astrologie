@@ -8,7 +8,7 @@ define ("mdp","blanc" or "Blanc");
 $date = $_POST['date'];
 $jour=date('z',strtotime($date));
 $mois = date('m', strtotime($date));
-echo "Vous êtes né(e) le ", date('j', strtotime($date)),"\n", $liste[(int)$mois-1]," !";
+echo "Vous êtes né(e) le (test) ", date('j', strtotime($date)),"\n", $liste[(int)$mois-1]," !";
 echo "\n";
 
 
