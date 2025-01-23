@@ -16,7 +16,11 @@ echo"</br> $date";
 
         <body>
 
-<p>Bonjour Taureau</p>
+<p>Bonjour Taureau      </br>
+Vous êtes né(e) le même jour que : - Dwayne Johnson 
+                                   - Megan Fox
+                                   - Mark Zukerberg
+</p>
 
 
 
