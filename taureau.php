@@ -10,22 +10,21 @@ $nom = $_POST["nom"];
         <head>
             <meta charset="UTF-8"/>
             <link rel="stylesheet" href="style.css"/>
-            <title> Formulaire </title>
+            <title> Taureau </title>
         </head>
 
-        <body>
+        <body id="Taureau">
+    <h1>TAUREAU</h1>
 
-<p>Bonjour Taureau</br>
-Vous êtes né(e) le même jour que : - Dwayne Johnson 
-                                   - Megan Fox
-                                   - Mark Zukerberg
-<?php echo"$prenom"; 
-echo"br";
-echo"$date";?></p>
-</p>
-<img src="images/taureau.jpg" alt="taureau">
-
-
-
+<p>Bonjour <?php echo"$prenom";?></br>
+Vous êtes né(e) le <?php echo"$date";?>, le même jour que :
+<ul>
+    <li>Dwayne Johnson</li>
+    <img src="images/theweeknd.jpg" alt="">
+    <li>Megan Fox</li>
+    <img src="images/theweeknd.jpg" alt="">
+    <li>Mark Zukerberg</li>
+    <img src="images/theweeknd.jpg" alt="">
+</ul></p>
     </body>
 </html>

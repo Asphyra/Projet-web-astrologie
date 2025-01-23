@@ -1,9 +1,19 @@
-h1,h2,h3,h4,h5,h6,p,a {
-    color: white;
+@font-face {
+    font-family: 'GastrolinesSignature';
+    src: url('fonts/GastrolineSignature_PERSONAL_USE_ONLY.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "cursive";
+    src: url(fonts/Cursive\ standard.ttf) format(truetype);
 }
 
-p {
-    font-size: larger;
+#newfont{
+    font-family:'GastrolinesSignature';
+}
+#newfont{
+    font-family: "cursive";
 }
 
 body {
@@ -11,4 +21,44 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    text-align: center;
+}
+
+#Taureau {
+    background-image: url(images/taureau.jpg);
+}
+
+#Verseau {
+    background-image: url(images/verseau.png);
+}
+
+h1,h2,h3,h4,h5,h6,p,a, ul {
+    color: white;
+}
+
+h1 {
+    font-family: 'GastrolinesSignature';
+}
+
+h2, p, ul {
+    font-family: "cursive";
+    font-size:x-large;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+.duo {
+    display: flex;
+    flex-direction: column;
+}
+
+.star {
+    color: white;
+    font-weight: bold;
+    background-color: darkgrey;
 }

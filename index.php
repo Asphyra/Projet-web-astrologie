@@ -2,11 +2,13 @@
     <html>
         <head>
             <meta charset="UTF-8"/>
+            <link rel="stylesheet" href="style.css">
             <title> Formulaire </title>
         </head>
 
         <body>
-            <h1> Formulaire : </h1>
+                <h1> Formulaire : </h1>
+                <div>
 	        <form method="post" action="question.php">
                 <h2>Nom : </h2>
                 <input type="texte" name="nom">
@@ -28,9 +30,6 @@
             <div>
                 <input type="submit" name="OK">
             </div>
-
-            
-
             </form>
 
         </body>
