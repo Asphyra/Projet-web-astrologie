@@ -31,8 +31,11 @@
 <input type="password" name="mdp"
 </div>
 
-<input type="hidden" id="postId" name="date" value="<?php
-echo "$date"?>"/>
+<input type="hidden" id="postId" name="date" value="
+<?php echo "$date"?>"/>
+<input type="hidden" id="postId" name="prenom" value="
+<?php echo "$prenom"?>"/>
+
 <div>
 <input type="submit" name="OK"
 </div>

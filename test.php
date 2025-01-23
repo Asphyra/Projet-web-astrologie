@@ -1,25 +1,16 @@
-<!DOCTYPE HTML>
-    <html>
-        <head>
-            <meta charset="UTF-8"/>:
-            <title> Formulaire </title>
-        </head>
-
-        <body>
-        <?php
+<?php
 setlocale(LC_TIME, ['fr', 'fra', 'fr_FR']);
 $liste = array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre",
 "Octobre", "Novembre", "Décembre");
 
-$prenom = $_POST['prenom'];
 $mdp = $_POST['mdp'];
 define ("mdp","blanc" or "Blanc");
 $date = $_POST['date'];
 $jour=date('z',strtotime($date));
 $mois = date('m', strtotime($date));
 echo "Vous êtes né(e) le ", date('j', strtotime($date)),"\n", $liste[(int)$mois-1]," !";
-echo "\n ";
-echo"$prenom";
+echo "\n";
+
 
 
 if (isset($jour)==1 and $mdp==mdp and $jour >= 355 )
@@ -72,8 +63,8 @@ exit();
 
 else if (isset($jour)==1 and $mdp==mdp and $jour >= 110 )
 {
-header('Location: taureau.php');
-exit()
+
+exit();
 }
 
 else if (isset($jour)==1 and $mdp==mdp and $jour >= 79 )
@@ -99,15 +90,5 @@ else if (isset($jour)==1 and $mdp==mdp and $jour >= 0 )
 echo"Capricorne";
 exit();
 }
-
 ?>
 
-<div>
-<input type="hidden" id="postId" name="date" value="
-<?php echo "$date"?>"/>
-<input type="hidden" id="postId" name="prenom" value="
-<?php echo "$prenom"?>"/>
-</div>
-
-    </body>
-</html>
