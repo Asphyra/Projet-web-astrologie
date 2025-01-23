@@ -18,12 +18,7 @@
 	$jour=date('z',strtotime($date));
 	$mois = date('m', strtotime($date));
 
-echo "Bonjour $prenom $nom </br>";
-echo "Vous êtes né(e) le ", date('j', strtotime($date)),"\n", $liste[(int)$mois-1]," !</br>";
-echo "\n ";
 
-
-    echo "$ville a vu naître une nouvelle star ce jour là !";
 
 	/*Jour par rapport au 1er janvier */
 
@@ -106,15 +101,23 @@ echo "\n ";
 
 	}
 
-	echo"</br>$signe.php";
 ?>
+
+<p>
+	Bonjour <?php echo "$prenom $nom" ?> </br> 
+Vous êtes né(e) le <?php echo date('j', strtotime($date)),"\n",$liste[(int)$mois-1] ?> </br>
+<?php echo "$ville a vu naître une nouvelle star ce jour là !" ?>
+
+</p>
+
+
 	<section>
 		<article>
 <p> Veuillez répondre à la question suivante afin d'accéder à votre Horoscope : </p>
 <p><a>Quelle est la couleur du cheval blanc d'Henry VI?</a></p>
 <form method="post" action=" <?php echo "$signe.php"?>">
 <div>
-<input type="password" name="mdp"
+<input type="password" name="mdp">
 </div>
 
 
@@ -126,6 +129,8 @@ echo "\n ";
 <?php echo "$date"?>"/>
 <input type="hidden" id="postId" name="prenom" value="
 <?php echo "$prenom"?>"/>
+<input type="hidden" id="postId" name="nom" value="
+<?php echo "$nom"?>"/>
 </div>
 </form>
 </article>

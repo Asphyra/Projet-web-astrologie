@@ -1,6 +1,9 @@
 <?php
 $prenom = $_POST["prenom"];
-echo"$prenom";
+$date = $_POST["date"];
+$nom = $_POST["nom"];
+echo"$prenom $nom";
+echo"</br> $date";
 
 ?>
 
