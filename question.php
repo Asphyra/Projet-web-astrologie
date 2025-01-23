@@ -8,12 +8,20 @@
 
 <?php
 	/* affichage */
-	$prenom = $_POST['prenom']; 
+	setlocale(LC_TIME, ['fr', 'fra', 'fr_FR']);
+	$liste = array("Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre","Octobre", "Novembre", "Décembre");
 	$nom = $_POST['nom'];
     $ville = $_POST['ville'];
-    $date = $_POST['date'];
+	$prenom = $_POST['prenom'];
+	define ("mdp","blanc" or "Blanc");
+	$date = $_POST['date'];
 	$jour=date('z',strtotime($date));
- 
+	$mois = date('m', strtotime($date));
+
+
+echo "Vous êtes né(e) le ", date('j', strtotime($date)),"\n", $liste[(int)$mois-1]," !";
+echo "\n ";
+echo"$prenom";
   
 	echo "bonjour $prenom $nom </br>";
     echo "Vous êtes né le $date à $ville</br>";

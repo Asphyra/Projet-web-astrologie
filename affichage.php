@@ -4,6 +4,14 @@
             <meta charset="UTF-8"/>:
             <title> Formulaire </title>
         </head>
+        <div>
+
+        <form method="post" action="question.php">
+<input type="hidden" id="postId" name="date" value="
+<?php echo "$date"?>"/>
+<input type="hidden" id="postId" name="prenom" value="
+<?php echo "$prenom"?>"/>
+</div>
 
         <body>
         <?php
@@ -20,6 +28,7 @@ $mois = date('m', strtotime($date));
 echo "Vous êtes né(e) le ", date('j', strtotime($date)),"\n", $liste[(int)$mois-1]," !";
 echo "\n ";
 echo"$prenom";
+
 
 
 if (isset($jour)==1 and $mdp==mdp and $jour >= 355 )
@@ -73,7 +82,7 @@ exit();
 else if (isset($jour)==1 and $mdp==mdp and $jour >= 110 )
 {
 header('Location: taureau.php');
-exit()
+exit();
 }
 
 else if (isset($jour)==1 and $mdp==mdp and $jour >= 79 )
@@ -90,7 +99,7 @@ exit();
 
 else if (isset($jour)==1 and $mdp==mdp and $jour >= 20 )
 {
-echo"Verseau";
+    header('Location: verseau.php');
 exit();
 }
 
@@ -102,12 +111,7 @@ exit();
 
 ?>
 
-<div>
-<input type="hidden" id="postId" name="date" value="
-<?php echo "$date"?>"/>
-<input type="hidden" id="postId" name="prenom" value="
-<?php echo "$prenom"?>"/>
-</div>
+
 
     </body>
 </html>
