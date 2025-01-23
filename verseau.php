@@ -1,3 +1,13 @@
+<?php
+$prenom = $_POST["prenom"];
+$date = $_POST["date"];
+echo"$prenom";
+echo"</br> $date"
+
+?>
+
+
+
 <!DOCTYPE HTML>
     <html>
         <head>

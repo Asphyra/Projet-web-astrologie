@@ -106,25 +106,26 @@ echo "\n ";
 
 	}
 
-	echo"</br>$signe";
+	echo"</br>$signe.php";
 ?>
 	<section>
 		<article>
 <p> Veuillez répondre à la question suivante afin d'accéder à votre Horoscope : </p>
 <p><a>Quelle est la couleur du cheval blanc d'Henry VI?</a></p>
-<form method="post" action="affichage.php"
+<form method="post" action=" <?php echo "$signe.php"?>">
 <div>
 <input type="password" name="mdp"
 </div>
 
+
+
+<div>
+</br>
+<input type="submit" name="OK">
 <input type="hidden" id="postId" name="date" value="
 <?php echo "$date"?>"/>
 <input type="hidden" id="postId" name="prenom" value="
 <?php echo "$prenom"?>"/>
-
-<div>
-</br>
-<input type="submit" name="OK"
 </div>
 </form>
 </article>

@@ -1,3 +1,9 @@
+<?php
+$prenom = $_POST["prenom"];
+echo"$prenom";
+
+?>
+
 <!DOCTYPE HTML>
     <html>
         <head>
